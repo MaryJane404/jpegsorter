@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-a = 'Hello'
-b = 'Маша'
-#print(f'{a}, {b}!')
-out = f'{a}, {b}!'
-print(out)
+from pathlib import Path
+
+base = Path('d:\\Akari\\Фото\\с телефона\\')
+filelist = list(base.glob('*.jpg'))
+print (filelist)
